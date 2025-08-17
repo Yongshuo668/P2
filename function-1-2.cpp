@@ -1,20 +1,15 @@
 #include <iostream>
 using namespace std;
 
-int is_identity(int array[10][10]) {
-    for (int i = 0; i < 10; i++) {
-        for (int j = 0; j < 10; j++) {
-            if (i > j) {
-                if (array[i][j] != 1) {
-                    return 0;
-                }
-            } else {
-                if (array[i][j] != 0) {
-                    return 0;
-                }
-            }
-        }
-    }
-    return 1;
-}
+int sum_diagonal(int array[4][4]);
 
+int main() {
+    int arr[4][4] = {
+        {1, 2, 3, 4},
+        {5, 6, 7, 8},
+        {9, 10, 11, 12},
+        {13, 14, 15, 16}
+    };
+    cout << sum_diagonal(arr) << endl;
+    return 0;
+}
