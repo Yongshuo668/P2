@@ -10,10 +10,6 @@ int main() {
             arr[i][j] = 1;
         }
     }
-    if (is_identity(arr)) {
-        cout << "It is an identity matrix" << endl;
-    } else {
-        cout << "It is not an identity matrix" << endl;
-    }
+    cout << (is_identity(arr) ? "1" : "0") << endl;
     return 0;
 }
